@@ -1,2 +1,0 @@
-window.symplor=window.symplor||{components:{}},window.symplor.components.sample=o=>({styles:`.symplor_sample {background: ${o.config.bgColor}}`,html:`<div class="symplor_sample">Sample Component ${o.data.text}</div>`,onLoad:o=>{o.addEventListener("click",(o=>{console.log("Sample Component Clicked")}))}});
-//# sourceMappingURL=sample.js.map
