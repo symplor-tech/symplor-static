@@ -1,0 +1,291 @@
+<html>
+  <head>
+    <title>Symplor Widgets Demo Page</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gsimple.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        color: #707070;
+      }
+      header {
+        position: relative;
+        background-color: #352ec6;
+        height: 180px;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+      }
+      .header_bg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        opacity: 0.5;
+        width: 100%;
+      }
+      .logo {
+        margin: 20px 20px 0 20px;
+        height: 32px;
+      }
+      h1 {
+        color: #fff;
+        flex: 1;
+        padding: 20px;
+        line-height: 40px;
+        font-size: 32px;
+      }
+      h2 {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 12px;
+        color: #333;
+      }
+      footer {
+        background-color: #352ec6;
+        color: #fff;
+        height: 60px;
+        line-height: 60px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+      }
+      section {
+        margin: 0 20px;
+      }
+      .adv {
+        display: flex;
+        justify-content: center;
+        margin: 20px -20px;
+        background: #ececec;
+        padding: 20px;
+        position: relative;
+        min-height: 290px;
+      }
+      .adv::before {
+        content: "Advertisement";
+        position: absolute;
+        top: 1px;
+        left: auto;
+        color: #333;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+    </style>
+    <style>
+      body,
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .loading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+      .loading_card {
+        width: 45%;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      @keyframes shine {
+        to {
+          background-position-x: -200%;
+        }
+      }
+
+      .loading_card__image,
+      .loading h2,
+      .loading h3,
+      .loading p {
+        background: linear-gradient(
+          110deg,
+          #ececec 8%,
+          #f5f5f5 18%,
+          #ececec 33%
+        );
+        border-radius: 5px;
+        background-size: 200% 100%;
+        animation: 1s shine linear infinite;
+      }
+
+      .loading_card__image {
+        height: 130px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      .loading_card__content {
+        padding: 10px;
+      }
+
+      .loading h2 {
+        height: 15px;
+        margin: 10px 0;
+      }
+      .loading h3 {
+        height: 15px;
+        margin: 10px 0;
+        width: 60%;
+      }
+
+      .loading p {
+        height: 30px;
+        width: calc(100% + 20px);
+        margin: 0 -10px;
+        position: relative;
+        top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="symplor_container">
+      <header>
+        <img
+          class="logo"
+          src="https://simple.symplor.com/public/images/logo.png"
+          alt="logo"
+        />
+        <img
+          class="header_bg"
+          src="https://simple.symplor.com/public/images/symplor_bg.png"
+          alt="logo"
+        />
+        <h1>Symplor Widgets Demo</h1>
+      </header>
+
+      <section>
+        <div id="lipsum">
+          <h2>Today's Top News</h2>
+          <p>
+            Lorem ipsum dolor sit amet, adipiscing elit. In accumsan luctus
+            tristique.
+          </p>
+          <p>
+            Proin nec pretium enim, vestibulum condimentum ante. Sed ullamcorper
+            pharetra lacus vitae pulvinar. Aenean eleifend, lorem pellentesque
+            consectetur vestibulum, turpis mi mattis nisi, sit amet viverra dui
+            ligula sed quam. Integer accumsan ante vitae tortor sagittis
+            pellentesque. Nulla laoreet nibh ligula, eget elementum erat dapibus
+            at. Curabitur arcu arcu, sodales eget arcu id, blandit semper purus.
+            Ut mattis consequat risus, a vulputate nunc viverra sit amet.
+          </p>
+          <p>
+            Proin nec pretium enim, vestibulum condimentum ante. Sed ullamcorper
+            pharetra lacus vitae pulvinar. Aenean eleifend, lorem pellentesque
+            consectetur vestibulum, turpis mi mattis nisi, sit amet viverra dui
+            ligula sed quam. Integer accumsan ante vitae tortor sagittis
+            pellentesque. Nulla laoreet nibh ligula, eget elementum erat dapibus
+            at. Curabitur arcu arcu, sodales eget arcu id, blandit semper purus.
+            Ut mattis consequat risus, a vulputate nunc viverra sit amet.
+          </p>
+          <p>
+            Proin nec pretium enim, vestibulum condimentum ante. Sed ullamcorper
+            pharetra lacus vitae pulvinar. Aenean eleifend, lorem pellentesque
+            consectetur vestibulum, turpis mi mattis nisi, sit amet viverra dui
+            ligula sed quam. Integer accumsan ante vitae tortor sagittis
+            pellentesque. Nulla laoreet nibh ligula, eget elementum erat dapibus
+            at. Curabitur arcu arcu, sodales eget arcu id, blandit semper purus.
+            Ut mattis consequat risus, a vulputate nunc viverra sit amet.
+          </p>
+          <br />
+          <div
+            data-symplor-widget="yes"
+            data-symplor-user="test"
+            data-symplor-slot="test_cricket_scorecard"
+          ></div>
+          <br />
+
+          <!-- <div data-symplor-widget="yes" data-symplor-user="demo_user" data-symplor-slot="product_list_mrec_slot"></div>
+          <br/>
+          <br/>
+          <div data-symplor-widget="yes" data-symplor-user="demo_user" data-symplor-slot="product_list_vertical_slot"></div> -->
+
+          <p>
+            In vehicula odio molestie pretium ultricies. Donec sem nunc, tempus
+            ac arcu ac, feugiat condimentum dui. Aenean est ipsum, semper nec
+            mattis sodales, accumsan quis justo. Praesent ut maximus metus, at
+            ullamcorper odio. Nulla sed orci quis ante mollis malesuada. Donec
+            congue elit ut fermentum placerat. Fusce et est augue.
+          </p>
+          <p>
+            Morbi tincidunt ullamcorper eros eu cursus. Vestibulum vel quam
+            maximus, sagittis tellus pulvinar, varius est. Vestibulum eleifend,
+            turpis non pellentesque pulvinar, diam nibh imperdiet dui, vel
+            cursus libero augue id libero. Nulla facilisis leo nec tempus
+            mollis. Mauris a imperdiet magna. Vivamus mattis gravida nisi vel
+            dictum. Quisque tincidunt semper lacus, nec pharetra lacus posuere
+            a. Suspendisse eget urna vitae elit ultricies volutpat. Fusce sed
+            dignissim lectus, ut convallis est. Quisque id risus quis arcu
+            tristique suscipit.
+          </p>
+          <p>
+            Quisque posuere tincidunt felis fringilla egestas. Suspendisse
+            tincidunt nunc a massa pulvinar tincidunt. Duis accumsan sed nibh
+            quis vehicula. Etiam semper est vel ex fringilla, quis molestie
+            turpis commodo. Curabitur laoreet sodales nibh non tempor. Sed
+            scelerisque egestas diam, sit amet dapibus ante tristique in. Nunc
+            hendrerit egestas eros nec elementum.
+          </p>
+          <p>
+            Quisque posuere tincidunt felis fringilla egestas. Suspendisse
+            tincidunt nunc a massa pulvinar tincidunt. Duis accumsan sed nibh
+            quis vehicula. Etiam semper est vel ex fringilla, quis molestie
+            turpis commodo. Curabitur laoreet sodales nibh non tempor. Sed
+            scelerisque egestas diam, sit amet dapibus ante tristique in. Nunc
+            hendrerit egestas eros nec elementum.
+          </p>
+          <p>
+            Quisque posuere tincidunt felis fringilla egestas. Suspendisse
+            tincidunt nunc a massa pulvinar tincidunt. Duis accumsan sed nibh
+            quis vehicula. Etiam semper est vel ex fringilla, quis molestie
+            turpis commodo. Curabitur laoreet sodales nibh non tempor. Sed
+            scelerisque egestas diam, sit amet dapibus ante tristique in. Nunc
+            hendrerit egestas eros nec elementum.
+          </p>
+          <p>
+            Quisque posuere tincidunt felis fringilla egestas. Suspendisse
+            tincidunt nunc a massa pulvinar tincidunt. Duis accumsan sed nibh
+            quis vehicula. Etiam semper est vel ex fringilla, quis molestie
+            turpis commodo. Curabitur laoreet sodales nibh non tempor. Sed
+            scelerisque egestas diam, sit amet dapibus ante tristique in. Nunc
+            hendrerit egestas eros nec elementum.
+          </p>
+          <p>
+            Quisque posuere tincidunt felis fringilla egestas. Suspendisse
+            tincidunt nunc a massa pulvinar tincidunt. Duis accumsan sed nibh
+            quis vehicula. Etiam semper est vel ex fringilla, quis molestie
+            turpis commodo. Curabitur laoreet sodales nibh non tempor. Sed
+            scelerisque egestas diam, sit amet dapibus ante tristique in. Nunc
+            hendrerit egestas eros nec elementum.
+          </p>
+        </div>
+      </section>
+
+      <footer>Copyright @Symplor, 2022</footer>
+    </div>
+    <script src="https://simple.symplor.com/widgets/sdk/v1.js"></script>
+    <!-- <script src="http://localhost:8080/v1.js"></script> -->
+  </body>
+</html>
